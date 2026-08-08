@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
-@theme inline {
+/* This line supports dark mode via class */
+@custom-variant dark (&:where(.dark, .dark *));
+/* And this adds it via data attribute */
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
+
+@theme {
+  /* Font size - 16px, aka 1rem, aka standard. */
+  --text-base: 1rem;
+  --font-sans: var(--font-noto-sans);
+
   /* Colors */
   /* Neutrals */
   --color-neutral-900: hsl(227, 75%, 14%);
@@ -23,9 +32,21 @@
   --color-dark-from: hsl(225, 71.4%, 5.5%);
   --color-dark-to: hsl(226.9, 75.3%, 14.3%);
 
-  /* Font size - 16px, aka 1rem, aka standard. */
-  --text-base: 1rem;
-  --font-sans: var(--font-noto-sans);
+  /* Now semantics */
+
+  --color-background-from: var(--color-light-from);
+  --color-background-to: var(--color-light-to);
+}
+
+@layer theme {
+  .dark {
+    --color-background-from: var(--color-dark-from);
+    --color-background-to: var(--color-dark-to);
+  }
+}
+
+* {
+  /* @apply outline outline-yellow-300; */
 }
 
 body {
