@@ -56,3 +56,11 @@ body {
   font-size: var(--text-base);
   font-weight: 400;
 }
+
+.btn {
+  @apply border-2 border-white;
+}
+
+.btn--active {
+  @apply bg-red-200;
+}

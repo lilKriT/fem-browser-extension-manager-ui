@@ -1,3 +1,4 @@
+"use client";
 import CardList from "./CardList";
 import FilterButtons from "./FilterButtons";
 
