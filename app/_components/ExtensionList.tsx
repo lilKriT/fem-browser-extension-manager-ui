@@ -1,6 +1,9 @@
 "use client";
+
 import CardList from "./CardList";
 import FilterButtons from "./FilterButtons";
+
+import extensions from "@/data/extensions";
 
 const ExtensionList = () => {
   return (
@@ -11,7 +14,7 @@ const ExtensionList = () => {
         <FilterButtons />
       </div>
 
-      <CardList />
+      <CardList extensions={extensions} />
     </div>
   );
 };
