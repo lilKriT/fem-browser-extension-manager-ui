@@ -33,9 +33,35 @@
   --color-dark-to: hsl(226.9, 75.3%, 14.3%);
 
   /* Now semantics */
+  /* General */
+  --color-heading: var(--color-neutral-0);
+  --color-text-sans: var(--color-neutral-0);
+  --color-focus: var(--color-neutral-0);
+  --color-border: var(--color-neutral-0);
+
+  /* Background */
   --color-background-from: var(--color-light-from);
   --color-background-to: var(--color-light-to);
+
+  /* Top bar */
+  --color-top-bar-bg: var(--color-neutral-0);
+  --color-dark-mode-toggle-bg: var(--color-neutral-0);
+  --color-dark-mode-toggle-hover-bg: var(--color-neutral-0);
+
+  /* Filters */
+  --color-filter-button-bg: var(--color-neutral-0);
+  --color-filter-button-hover-bg: var(--color-neutral-0);
+  --color-filter-button-active-bg: var(--color-neutral-0);
+  --color-filter-button-active-hover-bg: var(--color-neutral-0);
+
+  /* Card */
   --color-card-bg: var(--color-neutral-0);
+  --color-remove-button-bg: var(--color-neutral-0);
+  --color-remove-button-hover-bg: var(--color-neutral-0);
+  --color-extension-toggle-bg: var(--color-neutral-0);
+  --color-extension-toggle-hover-bg: var(--color-neutral-0);
+  --color-extension-toggle-active-bg: var(--color-neutral-0);
+  --color-extension-toggle-thumb-bg: var(--color-neutral-0);
 }
 
 @layer theme {
