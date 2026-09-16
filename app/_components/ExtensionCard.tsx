@@ -20,7 +20,7 @@ const ExtensionCard = ({ extension }: { extension: ExtensionCardProps }) => {
   };
 
   return (
-    <article>
+    <article className="bg-card-bg rounded-xl border border-border/30 p-4 shadow-[0px_0px_15px_0px] shadow-black/10">
       <Image src={logoURL} alt={`${name}'s Logo`} width={60} height={60} />
       <h3>{name}</h3>
       <p>{description}</p>
