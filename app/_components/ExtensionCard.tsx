@@ -20,14 +20,27 @@ const ExtensionCard = ({ extension }: { extension: ExtensionCardProps }) => {
   };
 
   return (
-    <article className="bg-card-bg rounded-xl border border-border/30 p-4 shadow-[0px_0px_15px_0px] shadow-black/10">
-      <Image src={logoURL} alt={`${name}'s Logo`} width={60} height={60} />
-      <h3>{name}</h3>
-      <p>{description}</p>
+    <article
+      className="bg-card-bg min-h-48 rounded-xl border border-border/30 p-4 shadow-[0px_0px_15px_0px] shadow-black/10 
+    flex flex-col justify-between gap-4"
+    >
+      {/* Top Row */}
+      <div className="flex items-start gap-4">
+        <Image src={logoURL} alt={`${name}'s Logo`} width={60} height={60} />
+        <div className="flex flex-col">
+          <h3>{name}</h3>
+          <p>{description}</p>
+        </div>
+      </div>
 
       {/* Bottom Row */}
-      <div>
-        <button onClick={handleDelete}>Remove</button>
+      <div className="flex justify-between">
+        <button
+          onClick={handleDelete}
+          className="bg-remove-button-bg border px-4 py-1 rounded-full font-bold cursor-pointer"
+        >
+          Remove
+        </button>
         <input
           autoComplete="off"
           type="checkbox"

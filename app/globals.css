@@ -57,6 +57,7 @@
   /* Card */
   --color-card-bg: var(--color-neutral-0);
   --color-remove-button-bg: var(--color-neutral-0);
+  --color-remove-button-border: var(--color-neutral-500);
   --color-remove-button-hover-bg: var(--color-neutral-0);
   --color-extension-toggle-bg: var(--color-neutral-0);
   --color-extension-toggle-hover-bg: var(--color-neutral-0);
