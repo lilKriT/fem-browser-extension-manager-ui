@@ -50,6 +50,7 @@
 
   /* Filters */
   --color-filter-button-bg: var(--color-neutral-0);
+  --color-filter-button-border: var(--color-neutral-600);
   --color-filter-button-hover-bg: var(--color-neutral-0);
   --color-filter-button-active-bg: var(--color-neutral-0);
   --color-filter-button-active-hover-bg: var(--color-neutral-0);
