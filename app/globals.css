@@ -35,7 +35,7 @@
   /* Now semantics */
   /* General */
   --color-heading: var(--color-neutral-900);
-  --color-text: var(--color-neutral-600);
+  --color-text: var(--color-neutral-700);
   --color-focus: var(--color-neutral-0);
   --color-border: var(--color-neutral-400);
 

@@ -8,7 +8,7 @@ const buttonStyle = `bg-filter-button-bg border border-filter-button-border
 
 const FilterButtons = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-2">
       <button className={buttonStyle}>All</button>
       <button className={buttonStyle}>Active</button>
       <button className={buttonStyle}>Inactive</button>
