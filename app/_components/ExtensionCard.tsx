@@ -41,12 +41,19 @@ const ExtensionCard = ({ extension }: { extension: ExtensionCardProps }) => {
         >
           Remove
         </button>
-        <input
-          autoComplete="off"
-          type="checkbox"
-          checked={extensionActive}
-          onChange={handleChange}
-        />
+
+        <label className="flex justify-center items-center cursor-pointer">
+          <div className="relative w-12 h-6 bg-red-200 motion-safe:duration-300 rounded-full">
+            <input
+              autoComplete="off"
+              type="checkbox"
+              className="sr-only peer"
+              checked={extensionActive}
+              onChange={handleChange}
+            />
+            <div className="absolute top-1 left-1 w-4 aspect-square rounded-full bg-blue-50 peer-checked:translate-x-6 motion-safe:duration-300 ease-in-out"></div>
+          </div>
+        </label>
       </div>
     </article>
   );
