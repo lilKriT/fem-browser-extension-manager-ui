@@ -6,6 +6,8 @@ const buttonStyle = `bg-filter-button-bg border border-filter-button-border
   rounded-full cursor-pointer
   shadow-[5px_0px_25px_1px] shadow-black/10`;
 
+const activeButtonStyle = "text-filter-button";
+
 const FilterButtons = () => {
   return (
     <div className="flex gap-2">
